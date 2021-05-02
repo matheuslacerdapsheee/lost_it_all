@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/MainStyle.css">
+    <title>Perca Tudo</title>
+</head>
+<body>
+    <div class="intro">
+        <video src="/imgs/background.mkv"></video>
+    </div> 
+    <section>
+        <h2>Lost It All</h2>
+        <p> <strong>perca</strong> tudo de uma vez. Viva uma realidade por pelo menos uma vez. Se tudo pode te ouvir, 
+          porque nao pedir ajuda ? <b>Paranoia.</b> ela te consome eu sei, sei também que gosta de se aventura. Clássico. <b> nao? </b> 
+          <strong>Perca Tudo Novamente</strong> repita o mesmo processo, <b>7 vezes</b> por semana, por favor <strong>perca tudo.</strong> 
+        </p>
+    </section>
+           
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+    integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+    integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+    integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+    crossorigin="anonymous"
+  ></script>
+  
+  <script src="/Js/app.js"></script>
+
+  <div class="cursor"> <img src="cursor/cursor.svg">
+
+ </div>
+  
+ <script>
+
+  const cursor = document.querySelector('.cursor');
+
+    document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: "+(e.pageY - 100)+"px; left: "+(e.pageX - 100)+"px;")
+    })
+    
+</script>
+
+
+
+</body>
+</html>
